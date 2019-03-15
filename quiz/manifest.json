@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "quiz",
+  "version": "1.0",
+  "description": "Collect the quiz from tencent cloud xuexi",
+  "icons": {
+    "48": "icons/quiz.png",
+    "96": "icons/quiz.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://tencentcloudxuexi.com/exam.php*"
+      ],
+      "js": [
+        "jquery-3.3.1.slim.min.js", "quiz.js"
+      ]
+    }
+  ],
+  "applications": {
+    "gecko": {
+      "id": "quiz@suyu0925.github.io"
+    }
+  }
+}
