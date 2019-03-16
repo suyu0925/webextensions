@@ -21,5 +21,10 @@
     "gecko": {
       "id": "quiz@suyu0925.github.io"
     }
-  }
+  },
+  "permissions": [
+    "webRequest",
+    "*://localhost/*",
+    "*://120.77.183.131/*"
+  ]
 }
